@@ -4,7 +4,9 @@ title: 你好，世界
 ---
 <html>
 <head>
-	<link href="http://prismjs.com/themes/prism.css" rel="stylesheet" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.3.0/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/highlight.js/9.3.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 	<h2>{{ page.title }}</h2>
@@ -12,37 +14,34 @@ title: 你好，世界
 	<p>采用jekyll和disqus构建</p>
 	<p>{{ page.date | date_to_string }}</p>
 
-	<pre><code class="html">
-		<h2>{{ page.title }}</h2>
-		<p>我的第一篇文章</p>
-		<p>采用jekyll和disqus构建</p>
-		<p>{{ page.date | date_to_string }}</p>
-	</code></pre>
+<pre><code class="html">
+<html>
+<head>asdfasdf</head>
+</html>
+</code></pre>
 
 	<div id="disqus_thread"></div>
-<script>
-/**
-* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
+	<script>
+	/**
+	* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+	*/
+	/*
+	var disqus_config = function () {
+	this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
 
-s.src = '//sheepfish.disqus.com/embed.js';
+	s.src = '//sheepfish.disqus.com/embed.js';
 
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-
-<script src="http://prismjs.com/prism.js"></script>
 </body>
 </html>
