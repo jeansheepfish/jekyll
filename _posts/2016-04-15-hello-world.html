@@ -15,9 +15,30 @@ title: 你好，世界
 	<p>{{ page.date | date_to_string }}</p>
 
 <pre><code class="html">
-<html>
-<head>asdfasdf</head>
-</html>
+<?php
+
+$config = [
+    'components' => [
+        'request' => [
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => 'YyMCKOqofoRHMv2o0zXFa_qvar0hiDSR',
+        ],
+    ],
+];
+
+if (!YII_ENV_TEST) {
+    // configuration adjustments for 'dev' environment
+    $config['bootstrap'][] = 'debug';
+    $config['modules']['debug'] = [
+        'class' => 'yii\debug\Module',
+    ];
+    $config['bootstrap'][] = 'gii';
+    $config['modules']['gii'] = [
+        'class' => 'yii\gii\Module',
+    ];
+}
+
+return $config;
 </code></pre>
 
 	<div id="disqus_thread"></div>
