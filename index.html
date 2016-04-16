@@ -9,9 +9,4 @@ title: 我的Blog
 	<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
-<p>分享资源</p>
-<ul>
-	{% for resource in site.resources %}
-	<li>{{ resource.date | date_to_string }} <a href="{{ site.baseurl }}{{ resource.url }}">{{ resource.title }}</a></li>
-	{% endfor %}
-</ul>
+
