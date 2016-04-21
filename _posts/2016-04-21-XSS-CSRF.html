@@ -1,0 +1,55 @@
+---
+layout: default
+title: XSS、CSRF原理和防范
+---
+<html>
+<head>
+
+</head>
+<body>
+	<h2>{{ page.title }}</h2>
+	<p>区别：XSS利用站点内的信任用户，而CSRF则通过伪装来自受信任用户的请求来利用受信任的网站。</p>
+		<ul>
+		<li>XSS（Cross Site Scripting）:服务器对客户端的输入检测不严格，
+		导致客户端输入的恶意JAVASCRIPT代码被植入到HTML代码中，这些JAVASCRIPT代码得以执行，实现一些特殊的目的.</li>
+		<li>CSRF（Cross-site request forgery）:跨站请求伪造，也被称成为“one click attack”或者session riding，通常缩写为CSRF或者XSRF，是一种对网站的恶意利用。</li>
+		</ul>	
+		<p style="text-indent:2em">如果baidu网盘被查封，请<a href="mailto:67215686@qq.com">邮件联系我单独发送</a></p>		
+	<p>二、安装（Adobe CS6全系列序列号如下）</p>
+	<img src="2016-04-21-XSS-CSRF/Same Origin Policy.png" width="500" height="200">
+Adobe Photoshop CS6 Extended<br>
+<ul>
+<li>1330-1452-8754-2689-0339-7943</li>
+<li>1330-1116-8179-9367-0006-5368</li>
+</ul>
+
+	<p>三、下载破解补丁：<a href="http://pan.baidu.com/s/1dE1qmxb">Adobe破解补丁</a></p>
+	<p>四、覆盖amtlib.dll的方法完成破解</p>	
+	<p style="text-indent:2em">{安装目录}\Support Files\Contents\Windows</p>	
+	<p>{{ page.date | date_to_string }}</p>
+
+	<div id="disqus_thread"></div>
+	<script>
+	/**
+	* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+	*/
+	/*
+	var disqus_config = function () {
+	this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+
+	s.src = '//sheepfish.disqus.com/embed.js';
+
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</body>	
+</html>
